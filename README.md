@@ -1,4 +1,4 @@
-# buildspace NFT Game Project
+# NFT Game Client
 
 ### **Welcome 👋**
 To get started with this course, clone this repo and follow these commands:
@@ -7,9 +7,27 @@ To get started with this course, clone this repo and follow these commands:
 2. Run `npm run start` to start the project
 3. Start coding!
 
-### What is the `.vscode` Folder?
-If you use VSCode to build your app, we included a list of suggested extensions that will help you build this project! Once you open this project in VSCode, you will see a popup asking if you want to download the recommended extensions :).
+Created as part of the [buildspace](https://buildspace.so/) course - Build your own turn-based game on the blockchain using L2 networks.
 
+### Details
 
-### **Questions?**
-Have some questions make sure you head over to your [buildspace Dashboard](https://app.buildspace.so/courses/CO5cc2751b-e878-41c4-99fa-a614dc910ee9) and link your Discord account so you can get access to helpful channels teaching assistants, and your instructor!
+We have the following components:
+
+- If a user has not connected their Metamask wallet, they see the Connect To Wallet view
+
+  ![ConnectToWalletView](/docs/ConnectToWalletView.gif)
+
+- If a user has connected their Metamask wallet, but has not minted any new character NFT, they see the Select a Character view
+
+  ![SelectCharacterView](/docs/CharacterView.png)
+
+- If a user has connected their Metamask wallet and has also minted a character NFT they will be playing with, they see the Arena component, where they can battle it out with the Boss
+
+  ![ArenaView](/docs/Arena.png)
+
+They battle with THE BOSS - Dormamu and attempt to bring it down. Collectively this is possible. Individually, it would be futile, since Dormamu has very high HP
+
+**NOTE**
+
+- This is just the client. You will find the server / blockchain code that it interacts with in [this repository](https://github.com/callmekatootie/nft-game)
+- The NFT that I received for completing this course is located [here](https://opensea.io/assets/matic/0x3CD266509D127d0Eac42f4474F57D0526804b44e/3266?force_update=true)
